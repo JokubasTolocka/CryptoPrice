@@ -1,0 +1,67 @@
+html{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+}
+.container{
+    margin: 3% 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.firstCur, .secondCur, .thirdCur{
+    flex-basis: 30%;
+    height: 80vh;
+    -webkit-box-shadow: 7px 18px 29px -3px rgba(191,191,191,1);
+    -moz-box-shadow: 7px 18px 29px -3px rgba(191,191,191,1);
+    box-shadow: 7px 18px 29px -3px rgba(191,191,191,1);
+    border-radius: 40px;
+
+}
+
+.firstCur{
+    background-color: #FF9500;
+}
+
+.secondCur{
+    background-color: #88CBF5;
+}
+
+.thirdCur{
+    background-color: #222222;
+}
+.name{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.name hr{
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+
+.price{
+    width: 80%;
+    background-color: white;
+    color: #4b4b4b;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .firstCur:hover{
+    animation: 0.1s increase ease-in;
+}
+
+@keyframes increase{
+    100%{
+        transform: scale(1.02);
+    }
+} */
+
