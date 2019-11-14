@@ -4,11 +4,14 @@ html{
 }
 .container{
     margin: 3% 5%;
+}
+.currencies{
     display: flex;
     justify-content: space-around;
 }
 
 .firstCur, .secondCur, .thirdCur{
+    padding: auto 5%;
     flex-basis: 30%;
     height: 80vh;
     -webkit-box-shadow: 7px 18px 29px -3px rgba(191,191,191,1);
@@ -41,7 +44,7 @@ html{
     
 }
 
-.price{
+.price, .value, .update{
     width: 80%;
     background-color: white;
     color: #4b4b4b;
@@ -49,10 +52,59 @@ html{
     border-radius: 15px;
 }
 
-.content{
+.content, .date{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+}
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.red{
+    color: #cf514c;
+}
+.green{
+    color: #67bf70;
+}
+.update{
+    margin-top: 10%;
+}
+.content{
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 770px){
+    .currencies{
+        flex-direction: column;
+    }
+    .firstCur, .secondCur, .thirdCur{
+        margin-top: 30px;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1350px){
+    h1{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    .update{
+        position: fixed;
+        bottom: 20px;
+    }
 }
 
 /* .firstCur:hover{

@@ -11,40 +11,56 @@
 </head>
 <body>
     <div class="container">
-        <div class="firstCur">
-            <div class="name">
-                <h1>Bitcoin</h1>
-                <hr>
+        <div class="currencies">
+            <div class="firstCur">
+                <div class="name">
+                    <h1>Bitcoin</h1>
+                    <hr>
+                </div>
+                <div class="content">
+                    <h3>Price:</h3>
+                    <h3 class="price" id="Bprice"></h3>
+                    <h3>Value change in 24 HRS:</h3>
+                    <h3 class="value" id="Bvalue"></h3>
+                    <h3>Value change in percent</h3>
+                    <h3 class="value" id="Bpercent"></h3>
+                </div>
             </div>
-            <div class="content">
-                <h3>Price:</h3>
-                <h3 class="price" id="Bprice">asdas</h3>
+            <div class="secondCur">
+                <div class="name">
+                    <h1>Litecoin</h1>
+                    <hr>
+                </div>
+                <div class="content">
+                    <h3>Price:</h3>
+                    <h3 class="price" id="Lprice"></h3>
+                    <h3>Value change in 24 HRS:</h3>
+                    <h3 class="value" id="Lvalue"></h3>
+                    <h3>Value change in percent</h3>
+                    <h3 class="value" id="Lpercent"></h3>
+                </div>
             </div>
-            
+            <div class="thirdCur">
+                <div class="name">
+                    <h1>Ethereum</h1>
+                    <hr>
+                </div>
+                <div class="content">
+                    <h3>Price:</h3>
+                    <h3 class="price" id="Eprice"></h3>
+                    <h3>Value change in 24 HRS:</h3>
+                    <h3 class="value" id="Evalue"></h3>
+                    <h3>Value change in percent</h3>
+                    <h3 class="value" id="Epercent"></h3>
+                </div>
+            </div>
         </div>
-        <div class="secondCur">
-            <div class="name">
-                <h1>Litecoin</h1>
-                <hr>
-            </div>
-            <div class="content">
-                <h3>Price:</h3>
-                <h3 class="price" id="Lprice">asdas</h3>
-            </div>
-        </div>
-        <div class="thirdCur">
-            <div class="name">
-                <h1>Ethereum</h1>
-                <hr>
-            </div>
-            <div class="content">
-                <h3>Price:</h3>
-                <h3 class="price" id="Eprice">asdas</h3>
-            </div>
+        <div class="date">
+            <h3 class="update">Last updated: <span id="time"></span></h3>
         </div>
     </div>
     
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
